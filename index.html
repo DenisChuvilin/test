@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieFun</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/menu" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2334b971e4.js" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="#home" class="active"> FoodieFun</a>
+      <nav id="myLinks">
+        <a href="https://frontend-60aua6dsi.now.sh/signup"> Login</a>
+        <a href="about_devs.html"> About </a>
+        <a>What</a>
+      </nav>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="questions">
+      <h3>Do you remember that meal you had two weeks ago?</h3>
+      <h3>Was the mild dish perfect, or volcanic?</h3>
+      <h3>Wasn't this the restaurant that was too loud?</h3>
+    </div>
+    <div class="statement">
+      <h3>
+        With FoodieFun you can keep track of all the restaurants and dishes you love!
+      </h3>
+      <p>And lets be honest, the one's you hate.</p>
+    </div>
+    <div class="bottom_part">
+      <h2 id="FoodieFun">FoodieFun</h2>
+      <button href="#">
+        <p>Sign Up</p>
+      </button>
+      <h1 id="tail">You eat out a lot...Remember it!</h1>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myLinks');
+        if (x.style.display === 'block') {
+          x.style.display = 'none';
+        } else {
+          x.style.display = 'block';
+        }
+      }
+    </script>
+  </body>
+</html>
